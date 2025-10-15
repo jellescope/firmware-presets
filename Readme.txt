@@ -1,0 +1,1 @@
+Create a new index.json:  node indexer/indexer.js
