@@ -183,6 +183,7 @@
       "jappyjan",
       "jawz101",
       "JazzMutant",
+      "jellescope",
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
@@ -468,6 +469,7 @@
       "no rpm",
       "noisy",
       "normal",
+      "NTSC",
       "O3",
       "O3 air unit",
       "Omni",
@@ -475,6 +477,7 @@
       "OpenVTx",
       "OSD",
       "ozr",
+      "PAL",
       "panda",
       "pandarc",
       "partial",
@@ -6571,7 +6574,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/jellescope.txt",
-      "hash": "603aef596badf295917cd8805371bf6a51f1f00712d5b8db719d4be29ed911ed",
+      "hash": "62caa05f4374949486a110ee2e7ac34b80aa25b2fe2cc7c4b95a6054da796ac4",
       "title": "Jellescope standard OSD config",
       "firmware_version": [
         "4.5"
@@ -6580,15 +6583,10 @@
       "status": "COMMUNITY",
       "keywords": [
         "OSD",
-        "TBS",
-        "TBS Core",
-        "GPS",
-        "navigation",
-        "longrange",
-        "mountain surfing",
-        "MtnSurf"
+        "NTSC",
+        "PAL"
       ],
-      "author": "bensonk",
+      "author": "jellescope",
       "priority": 0
     },
     {
