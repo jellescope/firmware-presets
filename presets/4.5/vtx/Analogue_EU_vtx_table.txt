@@ -33,7 +33,11 @@ set vtx_channel = 3
 set vtx_low_power_disarm = ON
 set vtx_freq = 5825
 
-#TODO power levels
-#vtxtable powerlevels 5
-#vtxtable powervalues 1 2 3 4 0
-#vtxtable powerlabels 25 100 200 400 PIT
+#power levels for specific models
+
+#$ OPTION BEGIN (UNCHECKED): Trashcan
+    # -- ADDER: Trashcan Power Levels --
+    vtxtable powerlevels 3
+    vtxtable powervalues 1 2 3
+    vtxtable powerlabels 25 100 200
+#$ OPTION END
