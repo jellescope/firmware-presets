@@ -1,0 +1,83 @@
+#$ TITLE: Jumper T16 general Setup
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  Jumper T16, IBUS, EDGETX
+#$ AUTHOR: jellescope
+#$ PARSER: MARKED
+#$ DESCRIPTION: Settings for the Jumper T16 with EdgeTX 
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Will set 6 aux channels (modes) and 4 adjustments
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Will turn the Beeper OFF
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Permanent Airmode is off, will be set with in the modes
+
+# feature
+feature -AIRMODE
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_CRIT_LOW
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -RX_SET
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CRASH_FLIP
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# setup the aux control channels (modes)
+aux 0 0 1 900 1250 0 0
+aux 1 1 2 1750 2100 0 0
+aux 2 2 2 1300 1700 0 0
+aux 3 13 0 1750 2100 0 0
+aux 4 28 2 900 1250 0 0
+aux 5 35 8 1350 1700 0 0
+aux 6 36 0 1750 2100 0 0
+
+# setup the adjustments
+adjrange 0 0 8 900 2100 29 8 0 0
+adjrange 1 0 2 900 1200 12 2 0 0
+adjrange 2 0 2 1350 1700 12 2 0 0
+adjrange 3 0 2 1850 2100 12 2 0 0
+
+# set default master parameters
+set mag_hardware = NONE
+set baro_hardware = NONE
+
+set small_angle = 180
+set deadband = 2
+set yaw_deadband = 2
+
+#$ OPTION BEGIN (CHECKED): IBUS protocol
+    # -- ADDER: For systems running the IBUS protocol --
+    set serialrx_provider = IBUS
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): FlySky SPI based receiver
+    # -- ADDER: Rx mode SPI Rx with A7105_FLYSKY_2A --
+    # -- ADDER: Edge TX: multi protocol FLSky2A, PPM,IBUS
+    set flysky_spi_tx_id = 1156480614
+    set flysky_spi_rf_channels = 40,96,58,161,35,87,47,128,2,123,74,156,7,116,79,151
+#$ OPTION END
