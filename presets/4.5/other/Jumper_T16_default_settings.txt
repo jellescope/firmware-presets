@@ -63,8 +63,7 @@ adjrange 2 0 2 1350 1700 12 2 0 0
 adjrange 3 0 2 1850 2100 12 2 0 0
 
 # set default master parameters
-set mag_hardware = NONE
-set baro_hardware = NONE
+
 
 set small_angle = 180
 set deadband = 2
