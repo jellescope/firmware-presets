@@ -19,9 +19,10 @@
     set osd_vbat_pos = 4490
     set osd_rssi_pos = 10694
     set osd_tim_2_pos = 14795
-    set osd_flymode_pos = 14381
+    set osd_flymode_pos = 14434
+    set osd_vtx_channel_pos = 2114
     set osd_mah_drawn_pos = 466
-    set osd_craft_name_pos = 14370
+    set osd_craft_name_pos = 14338
     set osd_pid_roll_pos = 8456
     set osd_pid_pitch_pos = 8488
     set osd_pid_yaw_pos = 8520
@@ -30,6 +31,11 @@
     set osd_battery_usage_pos = 32
     set osd_esc_rpm_pos = 76
     set osd_flip_arrow_pos = 4330
+    set osd_rate_profile_name_pos = 14370
+    set osd_stat_max_spd = OFF
+    set osd_stat_bbox = OFF
+    set osd_stat_bb_no = OFF
+    set osd_stat_max_fft = ON
     set vcd_video_system = PAL
 #$ OPTION END
 

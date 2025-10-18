@@ -1,0 +1,38 @@
+#$ TITLE: Jellescopes Models Setup
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:  Tyro79, Trashcan
+#$ AUTHOR: jellescope
+#$ PARSER: MARKED
+#$ DESCRIPTION: Specific setting for each of my models 
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Will set communication protocol
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 
+
+
+#$ OPTION BEGIN (UNCHECKED): Tyro79
+    # -- ADDER: For systems running the IBUS protocol --
+    serial 1 2048 115200 57600 0 115200
+    set serialrx_provider = IBUS
+    set rssi_channel = 14
+    set dshot_bidir = ON
+    set motor_pwm_protocol = DSHOT300
+    set motor_poles = 12
+    set name = Tyro79
+    profile 0
+    set dyn_idle_min_rpm = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Trashcan
+    # -- ADDER: Rx mode SPI Rx with A7105_FLYSKY_2A --
+    # -- ADDER: Edge TX: multi protocol FLSky2A, PPM,IBUS
+    set flysky_spi_tx_id = 1156480614
+    set flysky_spi_rf_channels = 40,96,58,161,35,87,47,128,2,123,74,156,7,116,79,151
+#$ OPTION END

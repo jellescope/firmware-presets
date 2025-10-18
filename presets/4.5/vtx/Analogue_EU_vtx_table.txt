@@ -10,8 +10,8 @@
 #$ PARSER: MARKED
 #$ DESCRIPTION: VTX tables for the European regulations
 #$ DESCRIPTION: 
-#$ DESCRIPTION: defaults: band=1, channel=3 freq: 5825, low_power_disarm = on
-#$ DESCRIPTION: Need to set the number and values of the power levels
+#$ DESCRIPTION: defaults: band=1, channel=3 freq: 5825, low_power_disarm = UNTIL_FIRST_ARM
+#$ DESCRIPTION: Three VTX power levels switch with Jumper T16 on 3pos switch (AUX3)
 #$ DESCRIPTION:
 #$ DISCLAIMER: All previous VTX Table settings will be reset.
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
@@ -30,14 +30,21 @@ vtxtable band 5 RACEBAND R CUSTOM     0    0 5732 5769 5806 5843    0    0
 # select default settings
 set vtx_band = 1
 set vtx_channel = 3
-set vtx_low_power_disarm = ON
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
 set vtx_freq = 5825
 
-#power levels for specific models
-
-#$ OPTION BEGIN (UNCHECKED): Trashcan
-    # -- ADDER: Trashcan Power Levels --
+#power levels defaults
+#$ OPTION BEGIN (CHECKED): Powerlevels (default)
+    # -- ADDER: Default Power Levels --
     vtxtable powerlevels 3
     vtxtable powervalues 1 2 3
     vtxtable powerlabels 25 100 200
+
+    # apply power setting for three levels with switch on controller (AUX 3)
+    vtx 0 2 0 0 1 900 1200
+    vtx 1 2 0 0 2 1300 1700
+    vtx 2 2 0 0 3 1800 2100
 #$ OPTION END
+
+#power levels for specific models (if different from default)
+

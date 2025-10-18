@@ -1,4 +1,4 @@
-#$ TITLE: Jumper T16 general Setup
+#$ TITLE: Jellescope General Setup
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
@@ -8,15 +8,18 @@
 #$ KEYWORDS:  Jumper T16, IBUS, EDGETX
 #$ AUTHOR: jellescope
 #$ PARSER: MARKED
-#$ DESCRIPTION: Settings for the Jumper T16 with EdgeTX 
+#$ DESCRIPTION: Jellescopes General Setup for Betaflight 
 #$ DESCRIPTION: 
-#$ DESCRIPTION: Will set 6 aux channels (modes) and 4 adjustments
+#$ DESCRIPTION: Will set aux channels (modes) and adjustments
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Will turn the Beeper OFF
 #$ DESCRIPTION: 
-#$ DESCRIPTION: Permanent Airmode is off, will be set with in the modes
+#$ DESCRIPTION: Permanent Airmode is off, will be set with the modes
 
 # feature
+feature -SOFTSERIAL
+feature -TELEMETRY
+feature -RX_PARALLEL_PWM
 feature -AIRMODE
 
 # beeper
@@ -49,34 +52,24 @@ beacon RX_SET
 
 # setup the aux control channels (modes)
 aux 0 0 1 900 1250 0 0
-aux 1 1 2 1750 2100 0 0
-aux 2 2 2 1300 1700 0 0
+aux 1 1 3 1750 2100 0 0
+aux 2 2 3 1300 1700 0 0
 aux 3 13 0 1750 2100 0 0
-aux 4 28 2 900 1250 0 0
-aux 5 35 8 1350 1700 0 0
+aux 4 28 3 900 1250 0 0
+aux 5 35 6 1750 2100 0 0
 aux 6 36 0 1750 2100 0 0
 
 # setup the adjustments
-adjrange 0 0 8 900 2100 29 8 0 0
-adjrange 1 0 2 900 1200 12 2 0 0
-adjrange 2 0 2 1350 1700 12 2 0 0
-adjrange 3 0 2 1850 2100 12 2 0 0
+adjrange 0 0 4 900 2100 29 4 0 0
+adjrange 1 0 5 900 2100 12 5 0 0
 
 # set default master parameters
-
-
 set small_angle = 180
 set deadband = 2
 set yaw_deadband = 2
 
-#$ OPTION BEGIN (CHECKED): IBUS protocol
-    # -- ADDER: For systems running the IBUS protocol --
-    set serialrx_provider = IBUS
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): FlySky SPI based receiver
-    # -- ADDER: Rx mode SPI Rx with A7105_FLYSKY_2A --
-    # -- ADDER: Edge TX: multi protocol FLSky2A, PPM,IBUS
-    set flysky_spi_tx_id = 1156480614
-    set flysky_spi_rf_channels = 40,96,58,161,35,87,47,128,2,123,74,156,7,116,79,151
+#add crash recovery
+#$ OPTION BEGIN (UNCHECKED): Set Crash Recovery
+    # -- ADDER: Apply Crash Recovery --
+    set crash_recovery = on
 #$ OPTION END

@@ -374,6 +374,7 @@
       "expert",
       "express",
       "Extreme",
+      "fast",
       "feisar",
       "filter",
       "filtering",
@@ -503,6 +504,7 @@
       "racing",
       "rad",
       "ranging",
+      "rateprofiles",
       "rates",
       "rc",
       "rc link",
@@ -535,6 +537,7 @@
       "Sharjah",
       "shitpilot",
       "sliders",
+      "slow",
       "Smart",
       "smart audio",
       "smartaudio",
@@ -578,12 +581,14 @@
       "trainer",
       "tramp",
       "transmitter",
+      "Trashcan",
       "Tune",
       "twig",
       "tx1600",
       "tx5m.1",
       "tx800",
       "tyrant",
+      "Tyro79",
       "ul10",
       "ul5",
       "ul7",
@@ -4583,6 +4588,28 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/4.4/rates/Jellescope_rates.txt",
+      "hash": "36b8ec53d22cf2c0ab11799b143750b7ec3a64c13a7b96c7348f9e75cc93eab9",
+      "title": "European VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates",
+        "rateprofiles",
+        "slow",
+        "default",
+        "fast"
+      ],
+      "author": "jellescope",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/4.4/rates/QuadMcFly_Freestyle.txt",
       "hash": "e0d274ae006c7bedddb3de4e2e6e70d7ca4138cc2a29e99acad14afffe601494",
       "title": "QuadMcFly Rates - Snappy Freestyle",
@@ -6535,7 +6562,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/Analogue_osd.txt",
-      "hash": "62caa05f4374949486a110ee2e7ac34b80aa25b2fe2cc7c4b95a6054da796ac4",
+      "hash": "04bda1acd36d98cc1cada99dfcd78c736ef7e8c906bb03b3f0d18b9d4a182134",
       "title": "Jellescope standard OSD config",
       "firmware_version": [
         "4.5"
@@ -6638,9 +6665,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/other/Jumper_T16_default_settings.txt",
-      "hash": "114eebd732c38c3ca7e76f15bc4c02d20f0e0954f5e12d4dbcf89a4b0b482201",
-      "title": "Jumper T16 general Setup",
+      "fullPath": "presets/4.5/other/Jellescope_General_Setup.txt",
+      "hash": "038e5a958d64350682583c4605f7b9aec2f214db2ddaf3d5aeaf93ba09d0fde7",
+      "title": "Jellescope General Setup",
       "firmware_version": [
         "4.2",
         "4.3",
@@ -6653,6 +6680,25 @@
         "Jumper T16",
         "IBUS",
         "EDGETX"
+      ],
+      "author": "jellescope",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/Jellescope_Specific_Models.txt",
+      "hash": "70ff921142cba5ec6a9c07593decef46a0bc18c5a467df77fca8f2cb115bce6d",
+      "title": "Jellescopes Models Setup",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Tyro79",
+        "Trashcan"
       ],
       "author": "jellescope",
       "priority": 0
@@ -8250,7 +8296,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/Analogue_EU_vtx_table.txt",
-      "hash": "9d3776b7a1465acb4f4745475375d0e28543f6f354b619162cdb0568d887b736",
+      "hash": "1d499fa8cb293e4a3f08a789104d1669d94d738d545919a56079f127f0c977a0",
       "title": "European VTX Table",
       "firmware_version": [
         "4.2",
