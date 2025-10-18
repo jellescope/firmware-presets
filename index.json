@@ -4588,28 +4588,6 @@
       "priority": 10000
     },
     {
-      "fullPath": "presets/4.4/rates/Jellescope_rates.txt",
-      "hash": "36b8ec53d22cf2c0ab11799b143750b7ec3a64c13a7b96c7348f9e75cc93eab9",
-      "title": "European VTX Table",
-      "firmware_version": [
-        "4.2",
-        "4.3",
-        "4.4",
-        "4.5"
-      ],
-      "category": "RATES",
-      "status": "COMMUNITY",
-      "keywords": [
-        "rates",
-        "rateprofiles",
-        "slow",
-        "default",
-        "fast"
-      ],
-      "author": "jellescope",
-      "priority": 10000
-    },
-    {
       "fullPath": "presets/4.4/rates/QuadMcFly_Freestyle.txt",
       "hash": "e0d274ae006c7bedddb3de4e2e6e70d7ca4138cc2a29e99acad14afffe601494",
       "title": "QuadMcFly Rates - Snappy Freestyle",
@@ -6870,6 +6848,28 @@
         "rosser"
       ],
       "author": "Chris Rosser",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/4.5/rates/Jellescope_rates.txt",
+      "hash": "36b8ec53d22cf2c0ab11799b143750b7ec3a64c13a7b96c7348f9e75cc93eab9",
+      "title": "European VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates",
+        "rateprofiles",
+        "slow",
+        "default",
+        "fast"
+      ],
+      "author": "jellescope",
       "priority": 10000
     },
     {
