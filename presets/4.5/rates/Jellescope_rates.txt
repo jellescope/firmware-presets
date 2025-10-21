@@ -10,9 +10,9 @@
 #$ PARSER: MARKED
 #$ DESCRIPTION: Describes three rateprofiles
 #$ DESCRIPTION: 
-#$ DESCRIPTION: Slow rates, for whoops
-#$ DESCRIPTION: Default rates, my preferred rates
-#$ DESCRIPTION: Fast rates optional, for testing
+#$ DESCRIPTION: Default rates, for acro mode
+#$ DESCRIPTION: Fats rates, for testing
+#$ DESCRIPTION: Angle rates for wngle mode flying
 #$ DESCRIPTION: 
 
 
@@ -20,27 +20,34 @@ rateprofile 0
 
 # rateprofile 0
 set rateprofile_name = default
-set roll_rc_rate = 15
-set pitch_rc_rate = 15
-set yaw_rc_rate = 20
-set roll_expo = 76
-set pitch_expo = 76
-set yaw_expo = 64
-set roll_srate = 91
-set pitch_srate = 91
-set yaw_srate = 80
+set roll_rc_rate = 5
+set pitch_rc_rate = 5
+set yaw_rc_rate = 5
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 70
 
 rateprofile 1
 
 # rateprofile 1
-set rateprofile_name = slow
-set roll_rc_rate = 8
+set rateprofile_name = fast
+set roll_rc_rate = 9
+set pitch_rc_rate = 9
+set yaw_rc_rate = 9
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 100
+set pitch_srate = 100
+set yaw_srate = 100
 
 rateprofile 2
 
 # rateprofile 2
-set rateprofile_name = fast
-set roll_rc_rate = 9
+set rateprofile_name = angle
+set roll_rc_rate = 67
+set pitch_rc_rate = 67
+set yaw_rc_rate = 67
 
 rateprofile 0
 

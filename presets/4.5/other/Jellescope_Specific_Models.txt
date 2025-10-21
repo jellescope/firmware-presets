@@ -18,7 +18,7 @@
 
 
 #$ OPTION BEGIN (UNCHECKED): Tyro79
-    # -- ADDER: For systems running the IBUS protocol --
+    # -- ADDER: For the Tyro79 model running Expresslrs --
     serial 1 2048 115200 57600 0 115200
     set serialrx_provider = IBUS
     set rssi_channel = 14
