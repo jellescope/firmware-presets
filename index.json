@@ -6852,8 +6852,8 @@
     },
     {
       "fullPath": "presets/4.5/rates/Jellescope_rates.txt",
-      "hash": "23aede972751fbdd26e5d0d614281ba8808f29ad463bcb92c654b002b3e789a0",
-      "title": "European VTX Table",
+      "hash": "23b0ff390a47892b002da05e6b053a5bdbe5b965b98378121a3f58e4d693961d",
+      "title": "Jellescope rates",
       "firmware_version": [
         "4.2",
         "4.3",
