@@ -26,7 +26,7 @@
     set motor_pwm_protocol = DSHOT300
     set motor_poles = 12
     set gyro_1_align_yaw = 1800
-    set name = Tyro79
+    set craft_name = Tyro79
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Trashcan
@@ -39,5 +39,5 @@
     set dshot_bidir = ON
     set motor_poles = 12
     set motor_pwm_protocol = DSHOT300
-    set name = Trashcan
+    set craft_name = Trashcan
 #$ OPTION END

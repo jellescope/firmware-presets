@@ -66,6 +66,7 @@ adjrange 1 0 3 900 2100 12 3 0 0
 set small_angle = 180
 set deadband = 2
 set yaw_deadband = 2
+set pilot_name = Jelle
 
 #add crash recovery
 #$ OPTION BEGIN (UNCHECKED): Set Crash Recovery
