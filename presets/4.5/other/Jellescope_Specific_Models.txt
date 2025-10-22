@@ -20,14 +20,14 @@
 #$ OPTION BEGIN (UNCHECKED): Tyro79
     # -- ADDER: For the Tyro79 model running Expresslrs --
     serial 1 2048 115200 57600 0 115200
-    set serialrx_provider = IBUS
+    set serialrx_provider = CRSF
     set rssi_channel = 14
     set dshot_bidir = ON
     set motor_pwm_protocol = DSHOT300
     set motor_poles = 12
+    set gyro_1_align_yaw = 1800
     set name = Tyro79
-    profile 0
-    set dyn_idle_min_rpm = 20
+
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Trashcan
@@ -35,4 +35,10 @@
     # -- ADDER: Edge TX: multi protocol FLSky2A, PPM,IBUS
     set flysky_spi_tx_id = 1156480614
     set flysky_spi_rf_channels = 40,96,58,161,35,87,47,128,2,123,74,156,7,116,79,151
+    set yaw_motors_reversed = ON
+    set fpv_mix_degrees = 10
+    set dshot_bidir = ON
+    set motor_poles = 12
+    set motor_pwm_protocol = DSHOT300
+    set name = Trashcan
 #$ OPTION END
