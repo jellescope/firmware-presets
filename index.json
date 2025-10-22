@@ -6540,7 +6540,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/Analogue_osd.txt",
-      "hash": "f67f7beb57f3a60a1d25507d352b80f906b8b75ef0537aeb03669446f18903ca",
+      "hash": "ad5173f71bb6e7a1fef1af4924aca49a1d271e2717fabdf7c8b58607af6fb5fa",
       "title": "Jellescope standard OSD config",
       "firmware_version": [
         "4.5"
