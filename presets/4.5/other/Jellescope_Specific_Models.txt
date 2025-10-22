@@ -27,7 +27,6 @@
     set motor_poles = 12
     set gyro_1_align_yaw = 1800
     set name = Tyro79
-
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Trashcan

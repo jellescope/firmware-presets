@@ -32,10 +32,6 @@
     set osd_esc_rpm_pos = 76
     set osd_flip_arrow_pos = 4330
     set osd_rate_profile_name_pos = 14370
-    set osd_stat_max_spd = OFF
-    set osd_stat_bbox = OFF
-    set osd_stat_bb_no = OFF
-    set osd_stat_max_fft = ON
     set vcd_video_system = PAL
 #$ OPTION END
 
