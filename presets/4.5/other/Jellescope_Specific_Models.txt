@@ -50,7 +50,7 @@
     set serialrx_provider = IBUS
     set rssi_channel = 14
     set dshot_bidir = ON
-    set motor_pwm_protocol = DSHOT600
+    set motor_pwm_protocol = DSHOT300
     set motor_poles = 14
     set gyro_1_align_yaw = 1800
     set craft_name = Lantian
@@ -66,3 +66,26 @@
     vtx 2 2 0 0 4 1800 2100
 #$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): Xframe
+    # -- ADDER: For the Aframe OmnibusF4SD IBUS --
+    serial 0 1 115200 57600 0 115200
+    serial 2 2048 115200 57600 0 115200
+    
+    set serialrx_provider = IBUS
+    set rssi_channel = 14
+    set dshot_bidir = ON
+    set motor_pwm_protocol = DSHOT300
+    set motor_poles = 14
+    set gyro_1_align_yaw = 1800
+    set craft_name = Xframe
+
+    #set vtx power levels
+    vtxtable powerlevels 4
+    vtxtable powervalues 1 2 3 4
+    vtxtable powerlabels 25 200 600 800
+
+    # apply power setting for three levels with switch on controller (AUX 3)
+    vtx 0 2 0 0 1 900 1200
+    vtx 1 2 0 0 2 1300 1700
+    vtx 2 2 0 0 4 1800 2100
+#$ OPTION END
