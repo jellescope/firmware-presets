@@ -30,8 +30,7 @@ vtxtable band 5 RACEBAND R CUSTOM     0    0 5732 5769 5806 5843    0    0
 # select default settings
 set vtx_band = 1
 set vtx_channel = 3
-set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_low_power_disarm = OFF
 set vtx_freq = 5825
 
 #power levels are set by preset Specific Models
-
