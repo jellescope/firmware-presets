@@ -68,8 +68,8 @@
 
 #$ OPTION BEGIN (UNCHECKED): Xframe
     # -- ADDER: For the Aframe OmnibusF4SD IBUS --
-    serial 0 1 115200 57600 0 115200
     serial 2 2048 115200 57600 0 115200
+    serial 5 64 115200 57600 0 115200
     
     set serialrx_provider = IBUS
     set rssi_channel = 14
