@@ -27,6 +27,16 @@
     set motor_poles = 12
     set gyro_1_align_yaw = 1800
     set craft_name = Tyro79
+
+    #set vtx power levels
+    vtxtable powerlevels 3
+    vtxtable powervalues 1 2 3
+    vtxtable powerlabels 25 100 200
+
+    # apply power setting for three levels with switch on controller (AUX 3)
+    vtx 0 2 0 0 1 900 1200
+    vtx 1 2 0 0 2 1300 1700
+    vtx 2 2 0 0 3 1800 2100
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Trashcan
@@ -40,4 +50,45 @@
     set motor_poles = 12
     set motor_pwm_protocol = DSHOT300
     set craft_name = Trashcan
+
+    #set vtx power levels
+    vtxtable powerlevels 3
+    vtxtable powervalues 1 2 3
+    vtxtable powerlabels 25 100 200
+
+    # apply power setting for three levels with switch on controller (AUX 3)
+    vtx 0 2 0 0 1 900 1200
+    vtx 1 2 0 0 2 1300 1700
+    vtx 2 2 0 0 3 1800 2100
 #$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Lantian
+    # -- ADDER: For the Lantian FURYFOSD IBUS --
+    serial 2 2048 115200 57600 0 115200
+    serial 5 64 115200 57600 0 115200
+    
+    # four power levels
+    vtxtable powerlevels 4
+    vtxtable powervalues 0 1 2 3
+    vtxtable powerlabels 25 200 600 800
+
+    set serialrx_provider = IBUS
+    set rssi_channel = 14
+    set dshot_bidir = ON
+    set motor_pwm_protocol = DSHOT600
+    set motor_poles = 14
+    set gyro_1_align_yaw = 1800
+    set craft_name = Lantian
+
+    #set vtx power levels
+    vtxtable powerlevels 4
+    vtxtable powervalues 1 2 3 4
+    vtxtable powerlabels 25 200 600 800
+
+
+    # apply power setting for three levels with switch on controller (AUX 3)
+    vtx 0 2 0 0 1 900 1200
+    vtx 1 2 0 0 2 1300 1700
+    vtx 2 2 0 0 4 1800 2100
+#$ OPTION END
+

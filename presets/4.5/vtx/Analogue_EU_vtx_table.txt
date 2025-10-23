@@ -33,18 +33,5 @@ set vtx_channel = 3
 set vtx_low_power_disarm = UNTIL_FIRST_ARM
 set vtx_freq = 5825
 
-#power levels defaults
-#$ OPTION BEGIN (CHECKED): Powerlevels (default)
-    # -- ADDER: Default Power Levels --
-    vtxtable powerlevels 3
-    vtxtable powervalues 1 2 3
-    vtxtable powerlabels 25 100 200
-
-    # apply power setting for three levels with switch on controller (AUX 3)
-    vtx 0 2 0 0 1 900 1200
-    vtx 1 2 0 0 2 1300 1700
-    vtx 2 2 0 0 3 1800 2100
-#$ OPTION END
-
-#power levels for specific models (if different from default)
+#power levels are set by preset Specific Models
 

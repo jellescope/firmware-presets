@@ -6644,7 +6644,7 @@
     },
     {
       "fullPath": "presets/4.5/other/Jellescope_General_Setup.txt",
-      "hash": "8b99d7e273b03662317b7d7e0f2888716e1f203ddf216ef967e2aa094347461c",
+      "hash": "faddf496ce2d87635e0f2b4951e153c180594727dc11bc917cbbdd0bbd57d85f",
       "title": "Jellescope General Setup",
       "firmware_version": [
         "4.2",
@@ -6664,7 +6664,7 @@
     },
     {
       "fullPath": "presets/4.5/other/Jellescope_Specific_Models.txt",
-      "hash": "047640ff3d95c9741325078c5b13d400af1183e763b9900b18751ad4e4b76495",
+      "hash": "b131efc56c1f8a681355427ed95b24c6f550f8c994d281e666cfee7ba5c1e907",
       "title": "Jellescopes Models Setup",
       "firmware_version": [
         "4.2",
@@ -8296,7 +8296,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/Analogue_EU_vtx_table.txt",
-      "hash": "1d499fa8cb293e4a3f08a789104d1669d94d738d545919a56079f127f0c977a0",
+      "hash": "3eb22692ddafa7a9f687ec27bb83f46aacdbada6e95049f9b31b5bec4cc0f37c",
       "title": "European VTX Table",
       "firmware_version": [
         "4.2",

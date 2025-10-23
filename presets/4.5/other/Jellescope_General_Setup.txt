@@ -21,6 +21,7 @@ feature -SOFTSERIAL
 feature -TELEMETRY
 feature -RX_PARALLEL_PWM
 feature -AIRMODE
+feature -LED_STRIP
 
 # beeper
 beeper -GYRO_CALIBRATED
